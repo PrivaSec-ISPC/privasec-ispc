@@ -1,0 +1,22 @@
+[
+  {
+    "id": "bd0ce63c-c29c-42a7-afcc-ea5f9434533e",
+    "nombre": "Principal",
+    "estado": false
+  },
+  {
+    "id": "41b983c7-a3ac-49cb-b8e7-2d23f0d8f94d",
+    "nombre": "Dormitorio",
+    "estado": false
+  },
+  {
+    "id": "918534ca-3637-46bb-b7b4-f1098d3bb379",
+    "nombre": "Sala",
+    "estado": false
+  },
+  {
+    "id": "388e7462-1dc3-48fb-9be5-a5a7c5a171ae",
+    "nombre": "Patio",
+    "estado": true
+  }
+]
