@@ -1,16 +1,15 @@
-from datetime import datetime
+import time
+from data.config import guardar_puertas
 
 
-hora = 23
+# bloqueo automatico
+def bloqueo_automatico(puertas):
+    print("Sistema de seguridad PrivaSec en proceso.")
 
+    time.sleep(5)
+    for puerta in puertas:
+        if puerta["estado"] == False:
+            puerta["estado"] = True
 
-def notificar_estado_puertas(puertas, hora):
-    tiempo = datetime.now().hour  # int
-    print(tiempo)
-
-    if hora == tiempo:
-        for puerta in puertas:
-            if puerta["estado"] == False:
-                print(f"La puerta {puerta["nombre"]} está abierta")
-            else:
-                print(f"La puerta {puerta["nombre"]} está cerrada")
+    guardar_puertas(puertas)
+    print("Sistema de seguridad PrivaSec finalizado. Puertas aseguradas.")
