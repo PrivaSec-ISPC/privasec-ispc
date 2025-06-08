@@ -1,5 +1,5 @@
 from app.puertas import *
-from data.puertas import cargar_puertas
+from data.config import cargar_puertas
 from app.eventos import *
 
 
